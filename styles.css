@@ -1,0 +1,124 @@
+
+body {
+ background-image: url("images/background_wood_grey.jpg");
+ background-repeat: repeat;
+ /*background-color: #cccccc;*/
+}
+
+/*Nav bar styles *************************************/
+
+#fixed-nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+}
+
+#flex-nav{
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 45px;
+  line-height: 45px; /* same as height! */
+  vertical-align: middle;
+
+}
+
+#nav-list {display: inline;}
+nav {
+	border:2px solid black;
+	height:60px}
+
+nav li{
+	display:inline;
+	float:right;
+	padding:2px;}
+
+nav a, nav a:visited, nav a:link {
+	text-decoration:none;
+	color:gray;
+	border:2px solid green;
+	width:20px;
+	padding:10px;
+	font-size:20px;
+	background-color:lightgreen;}
+nav a:hover {
+	background-color:green;
+	}
+nav a:active {
+	background-color: hotpink;
+	}
+/*Grid layout *************************************/
+
+.grid-container{
+  /*width: 100vw;
+  height: 100vh;*/
+  border:2px solid green;
+  position: relative;
+  top: 100px;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 10px;
+
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 2r auto 1fr;
+
+  grid-template-areas:
+          "header header header"
+          "main-section main-section main-section"
+          "minor-section1 minor-section2 minor-section3"
+          "foot foot foot";
+}
+
+header{
+  grid-area: header;
+  text-align: center;
+
+}
+
+header a, header a:visited, header a:active, header a:link, header a:hover, header a:active{
+  font-family: 'Pacifico', cursive;
+  text-decoration:none;
+  color: gold;
+  size: 30px;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    color: gold;
+}
+
+.main-section{
+  grid-area: main-section;
+  background: LightGrey;
+  border:2px solid green;
+  border-radius: 10px;
+}
+
+article{
+  background: LightGrey;
+  border:2px solid green;
+  border-radius: 20px;
+}
+
+.minor-section1{
+  grid-area: minor-section1;
+}
+
+.minor-section2{
+  grid-area: minor-section2;
+}
+.minor-section3{
+  grid-area: minor-section3;
+}
+
+.foot{
+  grid-area: foot;
+  border:2px solid green;
+  text-align: center;
+}
