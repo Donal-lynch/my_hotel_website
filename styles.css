@@ -65,14 +65,14 @@ nav a:active {
   justify-content: space-between;
   grid-gap: 10px;
 
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 2r auto 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2r 1fr;
 
   grid-template-areas:
-          "header header header"
-          "main-section main-section main-section"
-          "minor-section1 minor-section2 minor-section3"
-          "foot foot foot";
+          "header"
+          "main-section"
+          "article"
+          "foot";
 }
 
 header{
@@ -100,12 +100,30 @@ h2{
   border-radius: 10px;
 }
 
-article{
-  background: LightGrey;
-  border:2px solid green;
-  border-radius: 20px;
+
+
+.flex-container{
+	border:2px solid blue;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
+article{
+  background: LightGrey;
+  border:2px solid pink;
+  border-radius: 20px;
+  /*flex:1 1 100px;*/
+  min-width: 200px;
+  width: 30%;
+  margin: 10px;
+}
+
+
+
+
+/*
 .minor-section1{
   grid-area: minor-section1;
 }
@@ -116,7 +134,7 @@ article{
 .minor-section3{
   grid-area: minor-section3;
 }
-
+*/
 .foot{
   grid-area: foot;
   border:2px solid green;
