@@ -142,3 +142,22 @@ article a {
   color: LightGrey;
   size: 70px;
 }
+
+/*Booking Form*************************************/
+legend{
+	font-family: 'Pacifico', cursive;
+    color: gold;
+}
+
+fieldset p{
+	color:white;
+}
+
+label{
+	color:white;
+}
+
+
+
+
+

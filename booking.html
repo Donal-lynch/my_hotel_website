@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My Hotel Website</title>
+		<link rel="stylesheet" href="styles.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="wrapper">
+
+			<div class="grid-container">
+
+				<header>
+					<a href="index.html">
+						<h1>My Hotel Website</h1>
+					</a>
+				</header>
+
+				<div>
+					
+					
+					<form action="/subscribe" method="post">
+						<fieldset>
+							<legend>Make a booking</legend>
+							<p>What kind of room would you like</p>
+							<label>
+								<input type="radio" name="room_type" value="single">single
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="room_type" value="double">double
+							</label>
+							<br>
+							<label>
+								<input type="radio" name="room_type" value="suite">suite
+							</label>
+							<br>
+							<p>When do you plan to arrive?</p>
+							<input type="date" name="bday">
+							<br>
+							<input type="email" name="email">
+							<br>
+							<p>For how many nights do you plan to stay?</p>
+							<INPUT TYPE="NUMBER" MIN="1" MAX="10" STEP="1" VALUE="2">
+							<br>
+							<br>
+							<textarea rows="5" cols="50" spellcheck>Please enter any special requests</textarea>
+							<br>
+							<button>Submit</button>
+						</fieldset>
+					</form>
+					
+					
+					
+					
+				
+					
+				</div>
+				
+
+				<footer class="foot">
+					Copyrigth &copy my hotel group
+				</footer>
+
+			</div> <!–– grid container ––>
+
+
+			<!–– although the nav bar is at the top of the page, it should be drawn last––>
+			<nav id="fixed-nav">
+				<div id=flex-nav>
+
+					<div><h2>My hotel</h2></div>
+
+					<div id="nav-list">
+						<ul>
+							<li class="book"><a href="index.html">Book</a></li>
+							<li><a href="index.html">Grounds</a></li>
+							<li><a href="index.html">Restraunt</a></li>
+							<li><a href="index.html">Gym</a></li>
+					</ul>
+					</div>
+				</div> <!–– flex-nav ––>
+			</nav>
+
+
+
+
+		</div> <!–– wrapper ––>
+	</body>
+</html>
